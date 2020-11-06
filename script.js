@@ -68,7 +68,8 @@ let yıl = second / 31577600;
 
 console.log(yıl);
 
-const cardElement = document.querySelector('.cardDisplay');
+const cardElement = document.getElementById('cardDisplay');
+// div altında yer alan bir "p" tag ine output atmamız gerekiyor
 
 function displayCard(planet) {
     let cardContent = "";
