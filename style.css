@@ -1,6 +1,6 @@
 body {
     background-image: url('./images/güneş\ sistemi.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -14,6 +14,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#cardDisplay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 #saniye {
@@ -43,12 +49,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    box-shadow: 5px 5px 5px 5px gray;
-    background-color: white;
+    flex-flow: column wrap;
+    width: 33%;
+    box-shadow: 3px 3px 3px 3px rgb(192, 185, 185);
+    background-color: black;
+    margin: 10px;
+    border-radius: 1em;
+    color: white
 }
 
 .planetimg {
     width: 50%;
+}
+
+.planetCard p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
