@@ -46,9 +46,21 @@ body {
     flex-flow: row wrap;
     width: 100%;
     box-shadow: 5px 5px 5px 5px gray;
-    background-color: white;
+    background-color: rgb(117, 65, 65);
+    color: white;
+}
+span{
+    font-weight: bold;
 }
 
 .planetimg {
     width: 50%;
+}
+
+#cardDisplay {
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1em;
 }
