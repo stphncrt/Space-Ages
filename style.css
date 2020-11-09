@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     flex-flow: column wrap;
     width: 33%;
     box-shadow: 3px 3px 3px 3px rgb(192, 185, 185);
@@ -56,12 +57,31 @@ body {
     margin: 10px;
     border-radius: 1em;
     color: white
+=======
+    flex-flow: row wrap;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: rgb(117, 65, 65);
+    color: white;
+}
+span{
+    font-weight: bold;
+>>>>>>> 39cdca158ad2ce9ba77cb3cc02c343a741281b44
 }
 
 .planetimg {
     width: 50%;
 }
 
+<<<<<<< HEAD
 .planetCard p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+=======
+#cardDisplay {
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1em;
+>>>>>>> 39cdca158ad2ce9ba77cb3cc02c343a741281b44
 }
