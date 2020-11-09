@@ -51,11 +51,7 @@ const planets = [{
         id: 8,
         name: "Neptune",
         orbitalYear: 164.79132,
-<<<<<<< HEAD
         image: './images/neptun.jpg',
-=======
-        image: './images/neptune.jpg',
->>>>>>> 39cdca158ad2ce9ba77cb3cc02c343a741281b44
         // age: yıl / orbitalYear,
     },
 
@@ -68,7 +64,6 @@ document.querySelector('#btnCalc').addEventListener('click', function() {
 });
 
 function displayCard(planet) {
-<<<<<<< HEAD
 
     console.log(planets.orbitalYear)
     let second = document.getElementById('saniye').value;
@@ -82,26 +77,10 @@ function displayCard(planet) {
     const cardElement = document.getElementById('cardDisplay');
 
 
-=======
-
-console.log(planets.orbitalYear)   
-let second = document.getElementById('saniye').value;
-
-let yıl = parseInt(second)/ 31577600;
-// let age = yıl /parseInt(planets.orbitalYear) ;   =>>> bu şekilde çağırınca tüm orbital year ları array 
-// olarak çağırıyor o yüzden bu işlemi for each içinde yapmamız gerek. tek tek yakalayarak aynı işleme 
-// tabi tutmamız gerek.
-
-
-const cardElement = document.getElementById('cardDisplay');
-
-
->>>>>>> 39cdca158ad2ce9ba77cb3cc02c343a741281b44
     let cardContent = "";
 
     planet.forEach((element) => {
         cardContent += `<div class="planetCard">
-<<<<<<< HEAD
     <h1 id="planetname" > ${element.name}</h1>
     <img src="${element.image}" class="planetimg" >
     <p id="statement" >You are at your  <span>${ Math.round(parseFloat(year)/parseFloat(element.orbitalYear)*100)/100}</span> if you live on ${element.name} planet.</p>
@@ -109,18 +88,8 @@ const cardElement = document.getElementById('cardDisplay');
 
         //  Math.ronud ()*100/100 ile virgülden sonra 2 basamak alarak yuvarlıyor.
         console.log(year / element.orbitalYear)
-=======
-        <h1 id="planetname" > ${element.name}</h1>
-        <img src="${element.image}" class="planetimg" >
-        <p id="statement" >You are at your  <span>${ Math.round(parseFloat(yıl)/parseFloat(element.orbitalYear)*100)/100}</span> if you live on ${element.name} planet.</p>
-
-    </div>`
-
-    //  Math.ronud ()*100/100 ile virgülden sonra 2 basamak alarak yuvarlıyor.
-console.log(yıl/element.orbitalYear)
->>>>>>> 39cdca158ad2ce9ba77cb3cc02c343a741281b44
     });
     cardElement.innerHTML = cardContent;
 }
 
-//  Daha iyi bir sitilleme yapılabilir. 
+//  Daha iyi bir sitilleme yapılabilir.
